@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Responsive Navigation Bar</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1 class="logo-text">Website </h1>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <script type="text/javascript">
+   const hamburger = document.querySelector('.hamburger');
+   const navlinks = document.querySelector('.nav-links');
+
+   hamburger.addeventlistener('c1ick', ()=>{
+    hamburger.classList.toggle('active');
+    navlinks.classList.toggle('show-menu');
+    });
+</script>
+
+</body>
+</html>
